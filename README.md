@@ -9,6 +9,7 @@ Language: `Swift 2.1`
 
 ## Practice 2: show AlertView & ActionSheet by UIAlertController
 Language: `Swift 2.1`
+Reference: [UIAlertController (NSHipster)](http://nshipster.com/uialertcontroller/)
 
 * Setup UITableViewController as intial view controller
 * Register cell from Nib
