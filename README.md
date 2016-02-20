@@ -9,17 +9,19 @@ Language: `Swift 2.1`
 
 ## Practice 2: show AlertView & ActionSheet by UIAlertController
 Language: `Swift 2.1`
+
 Reference: [UIAlertController (NSHipster)](http://nshipster.com/uialertcontroller/)
 
 * Setup UITableViewController as intial view controller
-* Register cell from Nib
+* Register cell: `tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)`
 * Show 3 kinds of AlertView & 2 kinds of ActionSheet
 
 ## Practice 3: add reminder by UILocalNotification
 Language: `Swift 2.1`
 
 * Register local notification with Swift 2 literal
-```swift
+
+  ```swift
 UIUserNotificationSettings(forTypes: .Alert | .Badge | .Sound], categories: nil)
     |
     v
