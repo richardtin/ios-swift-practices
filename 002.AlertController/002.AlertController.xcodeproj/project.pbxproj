@@ -12,9 +12,6 @@
 		D34AAA9E1C7608A000A6B2E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34AAA9C1C7608A000A6B2E5 /* LaunchScreen.storyboard */; };
 		D34AAAA91C7608A000A6B2E5 /* _02_AlertControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34AAAA81C7608A000A6B2E5 /* _02_AlertControllerUITests.swift */; };
 		D34AAAB51C76096700A6B2E5 /* AlertStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34AAAB31C76096700A6B2E5 /* AlertStyleViewController.swift */; };
-		D34AAAB61C76096700A6B2E5 /* AlertStyleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D34AAAB41C76096700A6B2E5 /* AlertStyleViewController.xib */; };
-		D34AAABD1C760F0E00A6B2E5 /* AlertStyleItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34AAABB1C760F0E00A6B2E5 /* AlertStyleItemCell.swift */; };
-		D34AAABE1C760F0E00A6B2E5 /* AlertStyleItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D34AAABC1C760F0E00A6B2E5 /* AlertStyleItemCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +34,6 @@
 		D34AAAA81C7608A000A6B2E5 /* _02_AlertControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _02_AlertControllerUITests.swift; sourceTree = "<group>"; };
 		D34AAAAA1C7608A000A6B2E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D34AAAB31C76096700A6B2E5 /* AlertStyleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertStyleViewController.swift; sourceTree = "<group>"; };
-		D34AAAB41C76096700A6B2E5 /* AlertStyleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertStyleViewController.xib; sourceTree = "<group>"; };
-		D34AAABB1C760F0E00A6B2E5 /* AlertStyleItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertStyleItemCell.swift; sourceTree = "<group>"; };
-		D34AAABC1C760F0E00A6B2E5 /* AlertStyleItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertStyleItemCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				D34AAA931C7608A000A6B2E5 /* AppDelegate.swift */,
-				D34AAABB1C760F0E00A6B2E5 /* AlertStyleItemCell.swift */,
-				D34AAABC1C760F0E00A6B2E5 /* AlertStyleItemCell.xib */,
 				D34AAAB31C76096700A6B2E5 /* AlertStyleViewController.swift */,
-				D34AAAB41C76096700A6B2E5 /* AlertStyleViewController.xib */,
 				D34AAA9A1C7608A000A6B2E5 /* Assets.xcassets */,
 				D34AAA9C1C7608A000A6B2E5 /* LaunchScreen.storyboard */,
 				D34AAA9F1C7608A000A6B2E5 /* Info.plist */,
@@ -185,8 +176,6 @@
 			files = (
 				D34AAA9E1C7608A000A6B2E5 /* LaunchScreen.storyboard in Resources */,
 				D34AAA9B1C7608A000A6B2E5 /* Assets.xcassets in Resources */,
-				D34AAAB61C76096700A6B2E5 /* AlertStyleViewController.xib in Resources */,
-				D34AAABE1C760F0E00A6B2E5 /* AlertStyleItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +193,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D34AAABD1C760F0E00A6B2E5 /* AlertStyleItemCell.swift in Sources */,
 				D34AAA941C7608A000A6B2E5 /* AppDelegate.swift in Sources */,
 				D34AAAB51C76096700A6B2E5 /* AlertStyleViewController.swift in Sources */,
 			);
@@ -386,6 +374,7 @@
 				D34AAAAF1C7608A000A6B2E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D34AAAB01C7608A000A6B2E5 /* Build configuration list for PBXNativeTarget "002.AlertControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -394,6 +383,7 @@
 				D34AAAB21C7608A000A6B2E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

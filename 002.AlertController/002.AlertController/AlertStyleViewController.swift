@@ -10,6 +10,8 @@ import UIKit
 
 class AlertStyleViewController: UITableViewController {
 
+    let cellReuseIdentifier = "AlertStyleItemCell"
+
     let sectionTitles = ["Alert", "ActionSheet"]
     let rowTitles = [
         ["Alert with 2 buttons", "Alert with 4 buttons", "Alert for login form"],
@@ -25,7 +27,7 @@ class AlertStyleViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
 
         title = "UIAlertController"
-        tableView.registerNib(UINib(nibName: "AlertStyleItemCell", bundle: nil), forCellReuseIdentifier: "AlertStyleItemCell")
+        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,12 +50,15 @@ class AlertStyleViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("AlertStyleItemCell", forIndexPath: indexPath)
+        var cell: UITableViewCell? = tableView.dequeueReusableCellWithIdentifier(cellReuseIdentifier, forIndexPath: indexPath) as UITableViewCell?
+        if cell == nil {
+            cell = UITableViewCell(style: .Default, reuseIdentifier: cellReuseIdentifier)
+        }
 
         // Configure the cell...
-        cell.textLabel?.text = rowTitles[indexPath.section][indexPath.row]
+        cell!.textLabel?.text = rowTitles[indexPath.section][indexPath.row]
 
-        return cell
+        return cell!
     }
 
     // MARK: Table view delegate
