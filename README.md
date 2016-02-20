@@ -22,10 +22,10 @@ Language: `Swift 2.1`
 * Register local notification with Swift 2 literal
 
   ```swift
-UIUserNotificationSettings(forTypes: .Alert | .Badge | .Sound], categories: nil)
-    |
-    v
-UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
-```
+  UIUserNotificationSettings(forTypes: .Alert | .Badge | .Sound], categories: nil)
+      |
+      v
+  UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
+  ```
 
 * Add a simple minutes reminder
