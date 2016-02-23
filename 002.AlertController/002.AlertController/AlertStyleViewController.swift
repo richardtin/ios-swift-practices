@@ -74,7 +74,6 @@ class AlertStyleViewController: UITableViewController {
             alertController.addAction(cancelAction)
 
             presentViewController(alertController, animated: true, completion: nil)
-            break
         case "Alert with 4 buttons":
             let alertController = UIAlertController(title: sectionTitles[indexPath.section], message: rowTitles[indexPath.section][indexPath.row], preferredStyle: .Alert)
             let defaultAction1 = UIAlertAction(title: "Default1", style: .Default, handler: nil)
@@ -87,7 +86,6 @@ class AlertStyleViewController: UITableViewController {
             alertController.addAction(destructiveAction)
 
             presentViewController(alertController, animated: true, completion: nil)
-            break
         case "Alert for login form":
             let alertController = UIAlertController(title: sectionTitles[indexPath.section], message: rowTitles[indexPath.section][indexPath.row], preferredStyle: .Alert)
             let loginAction = UIAlertAction(title: "Login", style: .Default, handler: nil)
@@ -112,7 +110,6 @@ class AlertStyleViewController: UITableViewController {
             }
 
             presentViewController(alertController, animated: true, completion: nil)
-            break
         case "ActionSheet with 2 buttons":
             let alertController = UIAlertController(title: sectionTitles[indexPath.section], message: rowTitles[indexPath.section][indexPath.row], preferredStyle: .ActionSheet)
             let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
@@ -121,7 +118,6 @@ class AlertStyleViewController: UITableViewController {
             alertController.addAction(cancelAction)
 
             presentViewController(alertController, animated: true, completion: nil)
-            break
         case "ActionSheet with 4 buttons":
             let alertController = UIAlertController(title: sectionTitles[indexPath.section], message: rowTitles[indexPath.section][indexPath.row], preferredStyle: .ActionSheet)
             let defaultAction1 = UIAlertAction(title: "Default1", style: .Default, handler: nil)
@@ -134,9 +130,14 @@ class AlertStyleViewController: UITableViewController {
             alertController.addAction(destructiveAction)
 
             presentViewController(alertController, animated: true, completion: nil)
-            break
         default:
-            break
+            let alertController = UIAlertController(title: "ERROR", message: "\(rowTitles[indexPath.section][indexPath.row]) not defined", preferredStyle: .Alert)
+            let dismissAction = UIAlertAction(title: "Dismiss", style: .Destructive, handler: nil)
+            alertController.addAction(dismissAction)
+
+            presentViewController(alertController, animated: true, completion: nil)
+
+            print("\(rowTitles[indexPath.section][indexPath.row]) not defined")
         }
 
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
