@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let tabBarItems = [UITabBarSystemItem.Bookmarks, UITabBarSystemItem.TopRated, UITabBarSystemItem.Recents, UITabBarSystemItem.Contacts]
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -25,10 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // Initialize viewControllers of tabBarController
         var viewControllers = [UIViewController]()
-        for index in 1...3 {
+        for index in 0..<tabBarItems.count {
             let controller = LeafViewController()
             controller.name = "Tab " + String(index)
-            controller.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem(rawValue: index+2)!, tag: index)
+            controller.tabBarItem = UITabBarItem(tabBarSystemItem: tabBarItems[index], tag: index)
             viewControllers.append(controller)
         }
         tabBarController.viewControllers = viewControllers
