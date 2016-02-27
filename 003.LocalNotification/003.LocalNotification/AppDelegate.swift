@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
 
         // Setup initial view controller
-        let controller = UINavigationController(rootViewController: ReminderViewController())
+        let controller = UINavigationController(rootViewController: ReminderTableViewController())
         self.window?.rootViewController = controller
 
         // Make window visible

@@ -11,8 +11,11 @@
 		D38CF08B1C7752610024672F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D38CF08A1C7752610024672F /* Assets.xcassets */; };
 		D38CF08E1C7752610024672F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D38CF08C1C7752610024672F /* LaunchScreen.storyboard */; };
 		D38CF0991C7752610024672F /* _03_LocalNotificationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38CF0981C7752610024672F /* _03_LocalNotificationUITests.swift */; };
-		D38CF0A51C7753760024672F /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38CF0A31C7753760024672F /* ReminderViewController.swift */; };
-		D38CF0A61C7753760024672F /* ReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D38CF0A41C7753760024672F /* ReminderViewController.xib */; };
+		D3B906581C7DF6EB006B0967 /* AddReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B906561C7DF6EB006B0967 /* AddReminderViewController.swift */; };
+		D3B906591C7DF6EB006B0967 /* AddReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3B906571C7DF6EB006B0967 /* AddReminderViewController.xib */; };
+		D3B9065C1C7DFBD2006B0967 /* ReminderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B9065A1C7DFBD2006B0967 /* ReminderTableViewController.swift */; };
+		D3B9065D1C7DFBD2006B0967 /* ReminderTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3B9065B1C7DFBD2006B0967 /* ReminderTableViewController.xib */; };
+		D3B906611C7E051E006B0967 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B906601C7E051E006B0967 /* Reminder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +37,11 @@
 		D38CF0941C7752610024672F /* 003.LocalNotificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 003.LocalNotificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38CF0981C7752610024672F /* _03_LocalNotificationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _03_LocalNotificationUITests.swift; sourceTree = "<group>"; };
 		D38CF09A1C7752610024672F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D38CF0A31C7753760024672F /* ReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
-		D38CF0A41C7753760024672F /* ReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReminderViewController.xib; sourceTree = "<group>"; };
+		D3B906561C7DF6EB006B0967 /* AddReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReminderViewController.swift; sourceTree = "<group>"; };
+		D3B906571C7DF6EB006B0967 /* AddReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddReminderViewController.xib; sourceTree = "<group>"; };
+		D3B9065A1C7DFBD2006B0967 /* ReminderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderTableViewController.swift; sourceTree = "<group>"; };
+		D3B9065B1C7DFBD2006B0967 /* ReminderTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReminderTableViewController.xib; sourceTree = "<group>"; };
+		D3B906601C7E051E006B0967 /* Reminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				D38CF0831C7752610024672F /* AppDelegate.swift */,
-				D38CF0A31C7753760024672F /* ReminderViewController.swift */,
-				D38CF0A41C7753760024672F /* ReminderViewController.xib */,
+				D3B906601C7E051E006B0967 /* Reminder.swift */,
+				D3B906561C7DF6EB006B0967 /* AddReminderViewController.swift */,
+				D3B906571C7DF6EB006B0967 /* AddReminderViewController.xib */,
+				D3B9065A1C7DFBD2006B0967 /* ReminderTableViewController.swift */,
+				D3B9065B1C7DFBD2006B0967 /* ReminderTableViewController.xib */,
 				D38CF08A1C7752610024672F /* Assets.xcassets */,
 				D38CF08C1C7752610024672F /* LaunchScreen.storyboard */,
 				D38CF08F1C7752610024672F /* Info.plist */,
@@ -177,8 +186,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3B906591C7DF6EB006B0967 /* AddReminderViewController.xib in Resources */,
+				D3B9065D1C7DFBD2006B0967 /* ReminderTableViewController.xib in Resources */,
 				D38CF08E1C7752610024672F /* LaunchScreen.storyboard in Resources */,
-				D38CF0A61C7753760024672F /* ReminderViewController.xib in Resources */,
 				D38CF08B1C7752610024672F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,8 +207,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D38CF0A51C7753760024672F /* ReminderViewController.swift in Sources */,
+				D3B906581C7DF6EB006B0967 /* AddReminderViewController.swift in Sources */,
 				D38CF0841C7752610024672F /* AppDelegate.swift in Sources */,
+				D3B9065C1C7DFBD2006B0967 /* ReminderTableViewController.swift in Sources */,
+				D3B906611C7E051E006B0967 /* Reminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +390,7 @@
 				D38CF09F1C7752610024672F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D38CF0A01C7752610024672F /* Build configuration list for PBXNativeTarget "003.LocalNotificationUITests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +399,7 @@
 				D38CF0A21C7752610024672F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
