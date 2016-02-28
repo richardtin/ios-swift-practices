@@ -29,3 +29,12 @@ Language: `Swift 2.1`
   ```
 
 * Add a simple minutes reminder
+
+## Practice 4: Make a simple calculator
+Language: `Swift 2.1`
+
+![Screenshot](screenshots/004.SimpleCalculator.png)
+
+* Make a calculator layout like iOS native Calculator
+* Practice MVC design pattern (Refer to 2015 CS193P Lecture 2 & 3)
+
