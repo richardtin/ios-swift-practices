@@ -10,10 +10,24 @@ import Foundation
 
 class SimpleCalculatorBrain {
 
-    private enum Op {
+    private enum Op: CustomStringConvertible {
         case Operand(Double)
         case UnaryOperation(String, Double -> Double)
         case BinaryOperation(String, (Double, Double) -> Double)
+        case ClearOperation(String)
+
+        var description: String {
+            switch self {
+            case .Operand(let operand):
+                return "\(operand)"
+            case .UnaryOperation(let symbol, _):
+                return symbol
+            case .BinaryOperation(let symbol, _):
+                return symbol
+            case .ClearOperation(let symbol):
+                return symbol
+            }
+        }
     }
 
     private var opStack = [Op]()
@@ -21,13 +35,17 @@ class SimpleCalculatorBrain {
     private var knownOps = [String:Op]()
 
     init() {
-        knownOps["÷"] = Op.BinaryOperation("÷") { $1 / $0 }
-        knownOps["×"] = Op.BinaryOperation("×", *)
-        knownOps["−"] = Op.BinaryOperation("−") { $1 - $0 }
-        knownOps["+"] = Op.BinaryOperation("+", +)
+        func learnOp(op: Op) {
+            knownOps[op.description] = op
+        }
+        learnOp(Op.BinaryOperation("÷") { $1 / $0 })
+        learnOp(Op.BinaryOperation("×", *))
+        learnOp(Op.BinaryOperation("−") { $1 - $0 })
+        learnOp(Op.BinaryOperation("+", +))
 
-        knownOps["±"] = Op.UnaryOperation("±") { -$0 }
-        knownOps["%"] = Op.UnaryOperation("%") { $0 / 100.0 }
+        learnOp(Op.ClearOperation("AC"))
+        learnOp(Op.UnaryOperation("±") { -$0 })
+        learnOp(Op.UnaryOperation("%") { $0 / 100.0 })
     }
 
     private func evaluate(ops: [Op]) -> (result: Double?, remainingOps: [Op]) {
@@ -51,24 +69,29 @@ class SimpleCalculatorBrain {
                         return (operation(operand1, operand2), op2Evaluation.remainingOps)
                     }
                 }
+            case .ClearOperation(_):
+                opStack.removeAll()
+                return evaluate(opStack)
             }
         }
         return (nil, ops)
     }
 
     func evaluate() -> Double? {
-//        let (result, _) = evaluate(opStack)
-//        return result
-        return evaluate(opStack).result
+        let (result, remainder) = evaluate(opStack)
+        print("\(opStack) = \(result) with \(remainder) left over")
+        return result
     }
 
-    func pushOperand(operand: Double) {
+    func pushOperand(operand: Double) -> Double? {
         opStack.append(Op.Operand(operand))
+        return evaluate()
     }
 
-    func performOperation(symbol: String) {
+    func performOperation(symbol: String) -> Double? {
         if let operation = knownOps[symbol] {
             opStack.append(operation)
         }
+        return evaluate()
     }
 }

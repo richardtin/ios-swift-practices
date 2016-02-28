@@ -14,7 +14,8 @@ class SimpleCalculatorViewController: UIViewController {
     @IBOutlet weak var operatorLabel: UILabel!
 
     var userIsInTheMiddleOfTypingANumber = false
-    var operandStack = [Double]()
+    var previousOpIsABinaryOperator = false
+    var brain = SimpleCalculatorBrain()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,60 +61,46 @@ class SimpleCalculatorViewController: UIViewController {
                 userIsInTheMiddleOfTypingANumber = true
             }
         }
+        previousOpIsABinaryOperator = false
     }
 
     @IBAction func operate(sender: UIButton) {
         if userIsInTheMiddleOfTypingANumber {
-            operandStack.append(displayValue)
             enter()
         }
 
-        // Binary operation needs 2 operands, it will execute next time
-        switch storedOperator {
-        case "÷": performBinaryOperation { $1 / $0 }
-        case "×": performBinaryOperation { $0 * $1 }
-        case "−": performBinaryOperation { $1 - $0 }
-        case "+": performBinaryOperation { $0 + $1 }
+        switch sender.currentTitle! {
+        case "AC", "±", "%":
+            if let result = brain.performOperation(sender.currentTitle!) {
+                displayValue = result
+            } else {
+                displayValue = 0
+            }
+            if sender.currentTitle! == "AC" { storedOperator = "" }
+        case "÷", "×", "−", "+":
+            if storedOperator != "" && !previousOpIsABinaryOperator {
+                if let result = brain.performOperation(storedOperator) {
+                    displayValue = result
+                }
+            }
+            storedOperator = sender.currentTitle!
+            previousOpIsABinaryOperator = true
+        case "=":
+            if let result = brain.performOperation(storedOperator) {
+                displayValue = result
+            }
+            storedOperator = ""
         default: break
         }
 
-        storedOperator = sender.currentTitle!
-
-        // Unary operation should execute immediately
-        switch storedOperator {
-        case "AC":
-            displayValue = 0
-            operandStack.removeAll()
-            enter()
-            storedOperator = ""
-        case "±": performUnaryOperation { -$0 }
-        case "%": performUnaryOperation { $0 / 100.0 }
-        default: break
-        }
-
-    }
-
-    func performUnaryOperation(operation: Double -> Double) {
-        if operandStack.count >= 1 {
-            displayValue = operation(operandStack.removeLast())
-            operandStack.append(displayValue)
-            enter()
-            storedOperator = ""
-        }
-    }
-
-    func performBinaryOperation(operation: (Double, Double) -> Double) {
-        if operandStack.count >= 2 {
-            displayValue = operation(operandStack.removeLast(), operandStack.removeLast())
-            operandStack.append(displayValue)
-            enter()
-        }
     }
 
     func enter() {
         userIsInTheMiddleOfTypingANumber = false
 
-        print("operandStack = \(operandStack)")
+        if let result = brain.pushOperand(displayValue) {
+            displayValue = result
+        }
     }
 
 }
