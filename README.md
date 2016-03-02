@@ -44,4 +44,6 @@ Language: `Swift 2.1`
 
 * Show blur effect: Light / Dark / Extra Light
 * Show vibrancy effect: None / Light / Dark / Extra Light
+* This practice is done by StoryBoard.
 
+> **Reference:** https://github.com/ide/UIVisualEffects
