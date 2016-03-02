@@ -38,3 +38,10 @@ Language: `Swift 2.1`
 * Make a calculator layout like iOS native Calculator
 * Practice MVC design pattern (Refer to 2015 CS193P Lecture 2 & 3)
 
+## Practice 5: Make blur effect with UIVisualEffectView
+
+![Screenshot](screenshots/005.UIVisualEffectView.png)
+
+* Show blur effect: Light / Dark / Extra Light
+* Show vibrancy effect: None / Light / Dark / Extra Light
+
