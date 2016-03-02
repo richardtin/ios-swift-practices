@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Visual Effect View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="VisualEffectViewController" customModule="_05_UIVisualEffectView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ElCaptian" translatesAutoresizingMaskIntoConstraints="NO" id="8ze-pB-01I">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vl0-DT-exR">
+                                <rect key="frame" x="0.0" y="20" width="600" height="145"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="j5B-HK-kZ4">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="145"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ka-x9-U0F">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="145"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="d2C-6E-Jac">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="145"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDn-RO-KVP">
+                                                        <rect key="frame" x="271" y="19" width="58" height="108"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                        <state key="normal" title="♠︎"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light blur without vibrancy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVw-Lh-zvT">
+                                                        <rect key="frame" x="8" y="8" width="193.5" height="19.5"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="RDn-RO-KVP" firstAttribute="centerY" secondItem="d2C-6E-Jac" secondAttribute="centerY" id="QuV-s9-zN5"/>
+                                                    <constraint firstItem="mVw-Lh-zvT" firstAttribute="leading" secondItem="d2C-6E-Jac" secondAttribute="leading" constant="8" id="kg0-Ga-icG"/>
+                                                    <constraint firstItem="mVw-Lh-zvT" firstAttribute="top" secondItem="d2C-6E-Jac" secondAttribute="top" constant="8" id="ltF-96-9xO"/>
+                                                    <constraint firstItem="RDn-RO-KVP" firstAttribute="centerX" secondItem="d2C-6E-Jac" secondAttribute="centerX" id="wdW-IH-cPz"/>
+                                                </constraints>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="8Ka-x9-U0F" secondAttribute="trailing" id="7rd-6x-vi8"/>
+                                        <constraint firstItem="8Ka-x9-U0F" firstAttribute="top" secondItem="j5B-HK-kZ4" secondAttribute="top" id="QWs-n3-2eZ"/>
+                                        <constraint firstAttribute="bottom" secondItem="8Ka-x9-U0F" secondAttribute="bottom" id="X2c-Cr-3VC"/>
+                                        <constraint firstItem="8Ka-x9-U0F" firstAttribute="leading" secondItem="j5B-HK-kZ4" secondAttribute="leading" id="YND-Hr-TEG"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d1f-HF-gUb">
+                                <rect key="frame" x="0.0" y="165" width="600" height="145"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="RKc-RC-LXB">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="145"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CCD-63-Rxc">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="145"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mXm-S6-6Bk">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="145"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v31-hP-1UW">
+                                                        <rect key="frame" x="268" y="19" width="65" height="108"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                        <state key="normal" title="♣︎"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light blur with Light vibrancy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wsa-5O-vLt">
+                                                        <rect key="frame" x="8" y="8" width="210.5" height="19.5"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="v31-hP-1UW" firstAttribute="centerY" secondItem="mXm-S6-6Bk" secondAttribute="centerY" id="1lf-sr-MYR"/>
+                                                    <constraint firstItem="v31-hP-1UW" firstAttribute="centerX" secondItem="mXm-S6-6Bk" secondAttribute="centerX" id="5jJ-3o-XJ6"/>
+                                                    <constraint firstItem="Wsa-5O-vLt" firstAttribute="top" secondItem="mXm-S6-6Bk" secondAttribute="top" constant="8" id="O3o-vh-JuU"/>
+                                                    <constraint firstItem="Wsa-5O-vLt" firstAttribute="leading" secondItem="mXm-S6-6Bk" secondAttribute="leading" constant="8" id="jO7-vV-rLd"/>
+                                                </constraints>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="CCD-63-Rxc" secondAttribute="trailing" id="2YF-zh-NEi"/>
+                                        <constraint firstItem="CCD-63-Rxc" firstAttribute="leading" secondItem="RKc-RC-LXB" secondAttribute="leading" id="6Rg-GS-mH4"/>
+                                        <constraint firstAttribute="bottom" secondItem="CCD-63-Rxc" secondAttribute="bottom" id="Ae5-t5-VrB"/>
+                                        <constraint firstItem="CCD-63-Rxc" firstAttribute="top" secondItem="RKc-RC-LXB" secondAttribute="top" id="EHS-CC-Wgx"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="neP-G3-H6r">
+                                <rect key="frame" x="0.0" y="310" width="600" height="145"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="o4B-7j-Ddh">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="145"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDf-e1-3UA">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="145"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5Rf-rp-fEa">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="145"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mh1-cN-0QB">
+                                                        <rect key="frame" x="271" y="18" width="59" height="108"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                        <state key="normal" title="♥︎"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark blur with Dark vibrancy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9T-NS-E1e">
+                                                        <rect key="frame" x="8" y="8" width="205.5" height="19.5"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Mh1-cN-0QB" firstAttribute="centerX" secondItem="5Rf-rp-fEa" secondAttribute="centerX" id="BeH-8d-LJ4"/>
+                                                    <constraint firstItem="H9T-NS-E1e" firstAttribute="top" secondItem="5Rf-rp-fEa" secondAttribute="top" constant="8" id="D8G-95-zJ2"/>
+                                                    <constraint firstItem="H9T-NS-E1e" firstAttribute="leading" secondItem="5Rf-rp-fEa" secondAttribute="leading" constant="8" id="SDO-ar-JfQ"/>
+                                                    <constraint firstItem="Mh1-cN-0QB" firstAttribute="centerY" secondItem="5Rf-rp-fEa" secondAttribute="centerY" id="zYM-9s-EEr"/>
+                                                </constraints>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="dark"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="oDf-e1-3UA" secondAttribute="bottom" id="8jP-PE-BrD"/>
+                                        <constraint firstItem="oDf-e1-3UA" firstAttribute="leading" secondItem="o4B-7j-Ddh" secondAttribute="leading" id="a0e-Re-ye6"/>
+                                        <constraint firstItem="oDf-e1-3UA" firstAttribute="top" secondItem="o4B-7j-Ddh" secondAttribute="top" id="kXn-zo-PYa"/>
+                                        <constraint firstAttribute="trailing" secondItem="oDf-e1-3UA" secondAttribute="trailing" id="vEy-Bc-FTp"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z0J-62-Y4G">
+                                <rect key="frame" x="0.0" y="455" width="600" height="145"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1ds-fg-WX1">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="145"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TRu-Ic-zpS">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="145"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mdr-eX-B50">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="145"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cG9-1o-2Qx">
+                                                        <rect key="frame" x="273" y="18" width="54" height="108"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                        <state key="normal" title="♦︎"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extra Light blur with Extra Light vibrancy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrv-Hc-IxE">
+                                                        <rect key="frame" x="8" y="8" width="293" height="19.5"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="zrv-Hc-IxE" firstAttribute="leading" secondItem="mdr-eX-B50" secondAttribute="leading" constant="8" id="CdI-fT-C95"/>
+                                                    <constraint firstItem="cG9-1o-2Qx" firstAttribute="centerY" secondItem="mdr-eX-B50" secondAttribute="centerY" id="Cgo-cf-biy"/>
+                                                    <constraint firstItem="cG9-1o-2Qx" firstAttribute="centerX" secondItem="mdr-eX-B50" secondAttribute="centerX" id="Mq2-CM-Xzk"/>
+                                                    <constraint firstItem="zrv-Hc-IxE" firstAttribute="top" secondItem="mdr-eX-B50" secondAttribute="top" constant="8" id="Sf9-aU-KKv"/>
+                                                </constraints>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="extraLight"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="TRu-Ic-zpS" firstAttribute="top" secondItem="1ds-fg-WX1" secondAttribute="top" id="Aqr-PN-vdy"/>
+                                        <constraint firstAttribute="bottom" secondItem="TRu-Ic-zpS" secondAttribute="bottom" id="NWv-4b-vTU"/>
+                                        <constraint firstItem="TRu-Ic-zpS" firstAttribute="leading" secondItem="1ds-fg-WX1" secondAttribute="leading" id="Oqu-pz-YMq"/>
+                                        <constraint firstAttribute="trailing" secondItem="TRu-Ic-zpS" secondAttribute="trailing" id="k7o-bE-qwP"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="extraLight"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z0J-62-Y4G" firstAttribute="top" secondItem="neP-G3-H6r" secondAttribute="bottom" id="0KS-mk-9oR"/>
+                            <constraint firstItem="z0J-62-Y4G" firstAttribute="height" secondItem="vl0-DT-exR" secondAttribute="height" id="3HK-tE-MsU"/>
+                            <constraint firstItem="neP-G3-H6r" firstAttribute="top" secondItem="d1f-HF-gUb" secondAttribute="bottom" id="9O3-Zk-FwV"/>
+                            <constraint firstItem="d1f-HF-gUb" firstAttribute="height" secondItem="vl0-DT-exR" secondAttribute="height" id="HP6-na-kff"/>
+                            <constraint firstItem="neP-G3-H6r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OQk-Hh-3BJ"/>
+                            <constraint firstItem="neP-G3-H6r" firstAttribute="height" secondItem="vl0-DT-exR" secondAttribute="height" id="P0N-Pv-c3I"/>
+                            <constraint firstItem="z0J-62-Y4G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UxK-Yu-2k2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="z0J-62-Y4G" secondAttribute="bottom" id="Vg3-Ot-zfL"/>
+                            <constraint firstItem="d1f-HF-gUb" firstAttribute="top" secondItem="vl0-DT-exR" secondAttribute="bottom" id="X1a-x9-1sH"/>
+                            <constraint firstItem="vl0-DT-exR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="XDm-nS-gOE"/>
+                            <constraint firstAttribute="trailing" secondItem="neP-G3-H6r" secondAttribute="trailing" id="YHU-6N-gwe"/>
+                            <constraint firstAttribute="trailing" secondItem="vl0-DT-exR" secondAttribute="trailing" id="d8G-qA-npP"/>
+                            <constraint firstAttribute="trailing" secondItem="z0J-62-Y4G" secondAttribute="trailing" id="rPh-Me-kEW"/>
+                            <constraint firstItem="vl0-DT-exR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="w9E-sM-6ek"/>
+                            <constraint firstAttribute="trailing" secondItem="d1f-HF-gUb" secondAttribute="trailing" id="xDx-NU-mMP"/>
+                            <constraint firstItem="d1f-HF-gUb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zgc-28-ylO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1192" y="337"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ElCaptian" width="1706" height="1066"/>
+    </resources>
+</document>
