@@ -45,5 +45,8 @@ Language: `Swift 2.1`
 * Show blur effect: Light / Dark / Extra Light
 * Show vibrancy effect: None / Light / Dark / Extra Light
 * This practice is done by StoryBoard.
+  - Blur effect UIVisualEffectView should be added in the same layer of target image view
+  - Vibrancy effect is set by UIVisualEffectView and nested in another blur effect UIVisualEffectView
+* Blur & vibrancy effect can be done by code, please see reference
 
-> **Reference:** https://github.com/ide/UIVisualEffects
+  > **Reference:** https://github.com/ide/UIVisualEffects
