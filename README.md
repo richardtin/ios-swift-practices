@@ -4,11 +4,17 @@ iOS practices with Swift language
 ## Practice 1: setup initial view controller programmatically
 Language: `Swift 2.1`
 
+![Screenshot](screenshots/001.InitialViewController.png)
+
 * Setup initial view controller programmatically
 * Setup UITabBarController and its viewControllers programmatically
 
 ## Practice 2: show AlertView & ActionSheet by UIAlertController
 Language: `Swift 2.1`
+
+![Screenshot](screenshots/002.AlertController-1.png)
+![Screenshot](screenshots/002.AlertController-2.png)
+![Screenshot](screenshots/002.AlertController-3.png)
 
 Reference: [UIAlertController (NSHipster)](http://nshipster.com/uialertcontroller/)
 
@@ -18,6 +24,10 @@ Reference: [UIAlertController (NSHipster)](http://nshipster.com/uialertcontrolle
 
 ## Practice 3: add reminder by UILocalNotification
 Language: `Swift 2.1`
+
+![Screenshot](screenshots/003.LocalNotification-1.png)
+![Screenshot](screenshots/003.LocalNotification-2.png)
+![Screenshot](screenshots/003.LocalNotification-3.png)
 
 * Register local notification with Swift 2 literal
 
