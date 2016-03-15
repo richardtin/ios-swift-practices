@@ -40,6 +40,8 @@ Language: `Swift 2.1`
 
 * Add a simple minutes reminder
 
+  > **Reference:** http://jamesonquave.com/blog/local-notifications-in-ios-8-with-swift-part-1/
+
 ## Practice 4: Make a simple calculator
 Language: `Swift 2.1`
 
