@@ -56,13 +56,12 @@ Reference: [UIAlertController (NSHipster)](http://nshipster.com/uialertcontrolle
 
 ## Practice 5: Make blur effect with UIVisualEffectView
 ![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)
-![Swift 2.1](https://img.shields.io/badge/swift-2.1-orange.svg)
 
 ![Screenshot](screenshots/005.UIVisualEffectView.png)
 
-* Show blur effect: Light / Dark / Extra Light
+* Show blur effect: Light / Light / Dark / Extra Light
 * Show vibrancy effect: None / Light / Dark / Extra Light
-* This practice is done by StoryBoard.
+* This practice is done by StoryBoard. (No source code included)
   - Blur effect UIVisualEffectView should be added in the same layer of target image view
   - Vibrancy effect is set by UIVisualEffectView and nested in another blur effect UIVisualEffectView
 * Blur & vibrancy effect can be done by code, please see reference
