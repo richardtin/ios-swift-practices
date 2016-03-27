@@ -3,7 +3,8 @@ iOS practices with Swift language
 
 ## Practice 1: setup initial view controller programmatically
 ![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)
-![Swift 2.1](https://img.shields.io/badge/swift-2.1-orange.svg)
+![Xcode 7.3](https://img.shields.io/badge/xcode-7.3-blue.svg)
+![Swift 2.2](https://img.shields.io/badge/swift-2.2-orange.svg)
 
 ![Screenshot](screenshots/001.InitialViewController.png)
 
@@ -12,7 +13,8 @@ iOS practices with Swift language
 
 ## Practice 2: show AlertView & ActionSheet by UIAlertController
 ![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)
-![Swift 2.1](https://img.shields.io/badge/swift-2.1-orange.svg)
+![Xcode 7.3](https://img.shields.io/badge/xcode-7.3-blue.svg)
+![Swift 2.2](https://img.shields.io/badge/swift-2.2-orange.svg)
 
 ![Screenshot](screenshots/002.AlertController-1.png)
 ![Screenshot](screenshots/002.AlertController-2.png)
@@ -26,7 +28,8 @@ Reference: [UIAlertController (NSHipster)](http://nshipster.com/uialertcontrolle
 
 ## Practice 3: add reminder by UILocalNotification
 ![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)
-![Swift 2.1](https://img.shields.io/badge/swift-2.1-orange.svg)
+![Xcode 7.3](https://img.shields.io/badge/xcode-7.3-blue.svg)
+![Swift 2.2](https://img.shields.io/badge/swift-2.2-orange.svg)
 
 ![Screenshot](screenshots/003.LocalNotification-1.png)
 ![Screenshot](screenshots/003.LocalNotification-2.png)
@@ -47,7 +50,8 @@ Reference: [UIAlertController (NSHipster)](http://nshipster.com/uialertcontrolle
 
 ## Practice 4: Make a simple calculator
 ![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)
-![Swift 2.1](https://img.shields.io/badge/swift-2.1-orange.svg)
+![Xcode 7.3](https://img.shields.io/badge/xcode-7.3-blue.svg)
+![Swift 2.2](https://img.shields.io/badge/swift-2.2-orange.svg)
 
 ![Screenshot](screenshots/004.SimpleCalculator.png)
 
@@ -56,6 +60,7 @@ Reference: [UIAlertController (NSHipster)](http://nshipster.com/uialertcontrolle
 
 ## Practice 5: Make blur effect with UIVisualEffectView
 ![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)
+![Xcode 7.3](https://img.shields.io/badge/xcode-7.3-blue.svg)
 
 ![Screenshot](screenshots/005.UIVisualEffectView.png)
 
