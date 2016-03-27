@@ -19,7 +19,7 @@ class AddReminderViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         title = "Add Reminder"
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Save, target: self, action: "saveReminder")
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Save, target: self, action: #selector(AddReminderViewController.saveReminder))
     }
 
     override func didReceiveMemoryWarning() {

@@ -22,7 +22,7 @@ class ReminderTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         title = "Reminder"
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: "addReminder")
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: #selector(ReminderTableViewController.addReminder))
 
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
     }
