@@ -72,3 +72,13 @@ Reference: [UIAlertController (NSHipster)](http://nshipster.com/uialertcontrolle
 * Blur & vibrancy effect can be done by code, please see reference
 
   > **Reference:** https://github.com/ide/UIVisualEffects
+
+## Practice 6: Make a horizontal photo list
+![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)
+![Xcode 7.3](https://img.shields.io/badge/xcode-7.3-blue.svg)
+![Swift 2.2](https://img.shields.io/badge/swift-2.2-orange.svg)
+
+![Screenshot](screenshots/006.HorizontalCollectionView.png)
+
+* Make a horizontal photo list
+
