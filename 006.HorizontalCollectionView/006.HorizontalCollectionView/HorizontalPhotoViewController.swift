@@ -22,6 +22,21 @@ class HorizontalPhotoViewController: UIViewController, UICollectionViewDataSourc
         photoCollectionView.backgroundColor = UIColor.whiteColor()
     }
 
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+
+        let isRightToLeft = UIView.userInterfaceLayoutDirectionForSemanticContentAttribute(photoCollectionView.semanticContentAttribute) == .RightToLeft
+        if isRightToLeft {
+            scrollToRightBeginning()
+        }
+    }
+
+    func scrollToRightBeginning(){
+        guard photoCollectionView.numberOfItemsInSection(0) > 0 else { return }
+        let indexPath = NSIndexPath(forItem: 0, inSection: 0)
+        photoCollectionView.scrollToItemAtIndexPath(indexPath, atScrollPosition: .Left, animated: false)
+    }
+
     // MARK: UICollectionViewDataSource
 
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {

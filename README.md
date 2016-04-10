@@ -78,7 +78,10 @@ Reference: [UIAlertController (NSHipster)](http://nshipster.com/uialertcontrolle
 ![Xcode 7.3](https://img.shields.io/badge/xcode-7.3-blue.svg)
 ![Swift 2.2](https://img.shields.io/badge/swift-2.2-orange.svg)
 
-![Screenshot](screenshots/006.HorizontalCollectionView.png)
+| Normal | Right to Left (RTL) |
+| :----: | :-----------------: |
+| ![Screenshot](screenshots/006.HorizontalCollectionView-1.png) | ![Screenshot](screenshots/006.HorizontalCollectionView-2.png) |
 
 * Make a horizontal photo list
+* Fix RTL does not start from first item
 
