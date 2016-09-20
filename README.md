@@ -85,3 +85,15 @@ Reference: [UIAlertController (NSHipster)](http://nshipster.com/uialertcontrolle
 * Make a horizontal photo list
 * Fix RTL does not start from first item
 
+## Practice 7: Make a collection view with auto centered cell
+![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)
+![Xcode 7.3](https://img.shields.io/badge/xcode-7.3-blue.svg)
+![Swift 2.2](https://img.shields.io/badge/swift-2.2-orange.svg)
+
+![Screenshot](screenshots/007.CenteredCellCollectionView-1.png)
+![Screenshot](screenshots/007.CenteredCellCollectionView-2.png)
+![Screenshot](screenshots/007.CenteredCellCollectionView-3.png)
+
+* Add a paging collection view
+* Add center cell flow layout for collection view
+
